@@ -1,4 +1,4 @@
 # This program prints Hello, world!
 
-print('Hello, world! V-1')
+print('Hello, world! V-1'
 
