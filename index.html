@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Colorful Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      min-height: 100vh;
+      color: #2d2d2d;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #fff6e8;
+      margin-top: 0.5rem;
+    }
+
+    .blog-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .post {
+      background: white;
+      border-left: 10px solid #ff7e5f;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .post:hover {
+      transform: scale(1.02);
+    }
+
+    .post h2 {
+      font-size: 1.5rem;
+      color: #ff5e57;
+      margin-bottom: 0.5rem;
+    }
+
+    .post .date {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    .post p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .post {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Colorful Blog</h1>
+    <p>Bright ideas, bold designs, and brilliant tech.</p>
+  </header>
+
+  <main class="blog-container">
+    <article class="post">
+      <h2>Welcome to My Blog</h2>
+      <div class="date">May 14, 2025</div>
+      <p>This is the first post on my new blog. I’ll be writing about web development, cloud technologies, and whatever else I’m learning. Stay tuned!</p>
+    </article>
+
+    <article class="post">
+      <h2>Deploying a Blog with AWS</h2>
+      <div class="date">May 10, 2025</div>
+      <p>In this article, I explain how to deploy a static blog using AWS S3, CloudFront, and Route 53. It’s fast, cheap, and scalable.</p>
+    </article>
+
+    <article class="post">
+      <h2>Why You Should Learn Kubernetes</h2>
+      <div class="date">May 5, 2025</div>
+      <p>Kubernetes is the standard for container orchestration. In this post, I cover what it is, why it matters, and how to get started.</p>
+    </article>
+  </main>
+
+  <footer>
+    © 2025 My Blog 🌟 Stay Colorful!
+  </footer>
+
+</body>
+</html>
