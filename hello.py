@@ -1,1 +1,4 @@
-print "Hello from Python!"
+# This program prints Hello, world!
+
+print('Hello, world!')
+
